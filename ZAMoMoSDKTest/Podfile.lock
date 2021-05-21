@@ -1,0 +1,106 @@
+PODS:
+  - CosmosEncrypt (1.0.0):
+    - openssl-lib
+    - protobuf-lib
+  - Mantle (2.1.6):
+    - Mantle/extobjc (= 2.1.6)
+  - Mantle/extobjc (2.1.6)
+  - MCCSecret (1.0.0)
+  - MetalPetal/Core (1.13.0)
+  - MetalPetal/Static (1.13.0):
+    - MetalPetal/Core
+  - MMBeautyKit (2.5.4-interact):
+    - CosmosEncrypt
+    - MCCSecret
+    - MMBeautyMedia
+    - MMCV
+    - MMDevice
+    - MMFileService
+    - MMXEngine (= 4.4.4-20200827.1913)
+  - MMBeautyMedia (2.7.0):
+    - Mantle
+    - MetalPetal/Static
+    - MMBeautyMedia/Beauty (= 2.7.0)
+    - MMBeautyMedia/Filter (= 2.7.0)
+    - MMBeautyMedia/Sticker (= 2.7.0)
+  - MMBeautyMedia/Beauty (2.7.0):
+    - Mantle
+    - MetalPetal/Static
+    - MMCV
+  - MMBeautyMedia/Filter (2.7.0):
+    - Mantle
+    - MetalPetal/Static
+  - MMBeautyMedia/Sticker (2.7.0):
+    - Mantle
+    - MetalPetal/Static
+    - MMCV
+    - MMXEngine
+  - MMCV (2.1.3.5):
+    - MCCSecret
+    - MMFileService
+    - PhotonHTTPDNS
+    - ZipArchive
+  - MMDevice (1.0.1)
+  - MMFileService (1.3.6)
+  - MMXEngine (4.4.4-20200827.1913)
+  - openssl-lib (1.0.1)
+  - PhotonHTTPDNS (1.0.3)
+  - protobuf-lib (3.6.1)
+  - ZALiveModule (1.0.0):
+    - ZAMoMoRender
+  - ZAMoMoRender (1.0.0):
+    - MetalPetal/Static
+    - MMBeautyKit
+  - ZipArchive (1.4.0)
+
+DEPENDENCIES:
+  - MetalPetal/Static (= 1.13.0)
+  - MMBeautyKit (= 2.5.4-interact)
+  - ZALiveModule (from `../`)
+  - ZAMoMoRender (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Mantle
+    - MetalPetal
+    - ZipArchive
+  https://github.com/cosmos33/MMSpecs.git:
+    - CosmosEncrypt
+    - MCCSecret
+    - MMBeautyKit
+    - MMBeautyMedia
+    - MMCV
+    - MMDevice
+    - MMFileService
+    - MMXEngine
+    - openssl-lib
+    - PhotonHTTPDNS
+    - protobuf-lib
+
+EXTERNAL SOURCES:
+  ZALiveModule:
+    :path: "../"
+  ZAMoMoRender:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CosmosEncrypt: cf630ded96fc16c4968296dc438644e9173a248b
+  Mantle: 4c0ed6ce47c96eccc4dc3bb071deb3def0e2c3be
+  MCCSecret: 5658f66290969726586eddbdfe45e27731dbfa17
+  MetalPetal: 985e14c41cea0086264799fae4de02602c51d794
+  MMBeautyKit: a6e7a50267d9792d49a2a827e4552e71db93fed8
+  MMBeautyMedia: 283d9c78538e4842fc1c999e4199e14ae0ec15f8
+  MMCV: 5ddb5b2b1d39f7ed3133d9df9405d5e4524de0f1
+  MMDevice: ea2f783f769331e40c558ef894541e31ced9aa13
+  MMFileService: 780cd7e63331b6cb66a78e2aa5adb682dd3ab78c
+  MMXEngine: 731cdfc6220054e5829a21bacc0895b34cc6b494
+  openssl-lib: e3f61a10280caf261c0e4c6b3e720aa94825f07a
+  PhotonHTTPDNS: e05d8ce4f99ba7fd0beed0b71b7406f6eff2c1ba
+  protobuf-lib: 72e5ad47507bf0457298db2ae4c34a935f2eab73
+  ZALiveModule: 2c310efc6de50dd597127adea6d3bdb8343d5047
+  ZAMoMoRender: 7f43b0119b4ac83c72037e4668afcb7f1e447965
+  ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
+
+PODFILE CHECKSUM: 2fe34c249f4b2576fbc80d7c1adb08787ec23ee6
+
+COCOAPODS: 1.10.1

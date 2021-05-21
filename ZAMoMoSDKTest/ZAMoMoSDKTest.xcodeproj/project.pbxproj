@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011561F950359BD194A501FF /* libPods-ZAMoMoSDKTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C566169BE0D6C4C682EFC182 /* libPods-ZAMoMoSDKTest.a */; };
 		BE3502D02657A99700F3B190 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3502CF2657A99700F3B190 /* AppDelegate.m */; };
 		BE3502D32657A99700F3B190 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3502D22657A99700F3B190 /* SceneDelegate.m */; };
 		BE3502D62657A99700F3B190 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3502D52657A99700F3B190 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		437D26ADC6479B177A98B203 /* Pods-ZAMoMoSDKTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAMoMoSDKTest.debug.xcconfig"; path = "Target Support Files/Pods-ZAMoMoSDKTest/Pods-ZAMoMoSDKTest.debug.xcconfig"; sourceTree = "<group>"; };
+		6A63D45BD9558CE8DCFB41E5 /* Pods-ZAMoMoSDKTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAMoMoSDKTest.release.xcconfig"; path = "Target Support Files/Pods-ZAMoMoSDKTest/Pods-ZAMoMoSDKTest.release.xcconfig"; sourceTree = "<group>"; };
 		BE3502CB2657A99700F3B190 /* ZAMoMoSDKTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZAMoMoSDKTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3502CE2657A99700F3B190 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BE3502CF2657A99700F3B190 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		BE3502DD2657A99800F3B190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE3502DF2657A99800F3B190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE3502E02657A99800F3B190 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C566169BE0D6C4C682EFC182 /* libPods-ZAMoMoSDKTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZAMoMoSDKTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011561F950359BD194A501FF /* libPods-ZAMoMoSDKTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006B228DDD749C04163F861E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C566169BE0D6C4C682EFC182 /* libPods-ZAMoMoSDKTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BE3502C22657A99700F3B190 = {
 			isa = PBXGroup;
 			children = (
 				BE3502CD2657A99700F3B190 /* ZAMoMoSDKTest */,
 				BE3502CC2657A99700F3B190 /* Products */,
+				C8E370EA020DA658BBBF7087 /* Pods */,
+				006B228DDD749C04163F861E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +91,15 @@
 			path = ZAMoMoSDKTest;
 			sourceTree = "<group>";
 		};
+		C8E370EA020DA658BBBF7087 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				437D26ADC6479B177A98B203 /* Pods-ZAMoMoSDKTest.debug.xcconfig */,
+				6A63D45BD9558CE8DCFB41E5 /* Pods-ZAMoMoSDKTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE3502E42657A99800F3B190 /* Build configuration list for PBXNativeTarget "ZAMoMoSDKTest" */;
 			buildPhases = (
+				1198DB128CD42034A4742EF2 /* [CP] Check Pods Manifest.lock */,
 				BE3502C72657A99700F3B190 /* Sources */,
 				BE3502C82657A99700F3B190 /* Frameworks */,
 				BE3502C92657A99700F3B190 /* Resources */,
+				86445C0531F6DBF57F2C6363 /* [CP] Embed Pods Frameworks */,
+				BB26E259C435A90A25EC2585 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1198DB128CD42034A4742EF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZAMoMoSDKTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86445C0531F6DBF57F2C6363 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZAMoMoSDKTest/Pods-ZAMoMoSDKTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZAMoMoSDKTest/Pods-ZAMoMoSDKTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZAMoMoSDKTest/Pods-ZAMoMoSDKTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB26E259C435A90A25EC2585 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZAMoMoSDKTest/Pods-ZAMoMoSDKTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZAMoMoSDKTest/Pods-ZAMoMoSDKTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZAMoMoSDKTest/Pods-ZAMoMoSDKTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE3502C72657A99700F3B190 /* Sources */ = {
@@ -288,12 +374,14 @@
 		};
 		BE3502E52657A99800F3B190 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 437D26ADC6479B177A98B203 /* Pods-ZAMoMoSDKTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NFTSVF7Q5S;
+				DEVELOPMENT_TEAM = 4SAW597S7M;
 				INFOPLIST_FILE = ZAMoMoSDKTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +394,14 @@
 		};
 		BE3502E62657A99800F3B190 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A63D45BD9558CE8DCFB41E5 /* Pods-ZAMoMoSDKTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NFTSVF7Q5S;
+				DEVELOPMENT_TEAM = 4SAW597S7M;
 				INFOPLIST_FILE = ZAMoMoSDKTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
