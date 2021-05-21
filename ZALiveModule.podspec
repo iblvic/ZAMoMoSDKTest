@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/iblvic/ZAMoMoSDKTest.git', :tag=>s.version }
     s.ios.deployment_target = '9.0'
     s.source_files = "LiveSources/**/*.{h,m,mm}"
-    s.dependency 'ZAMoMoRender', '=1.0.0'
+    s.dependency 'ZAMoMoRender'
     
 end
